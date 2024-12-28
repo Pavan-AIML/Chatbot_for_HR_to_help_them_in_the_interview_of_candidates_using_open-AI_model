@@ -1,6 +1,7 @@
-<h1> Creating a chatbot to help HR in recruiting the people <h1>
+<h2> Creating a chatbot to help HR in recruiting the people <h2>
 
-<h2> Getting to know about all the model parameters <h2>
+<h3> Getting to know about all the model parameters <h3>
+
 - Creating the prototypes of the chatbot
 - taking the Help of Chatgpt playground for the choosign and testing of models and other settings.
 - Max tokens -: Allowing us to setup the max tokens allowed.
@@ -16,4 +17,6 @@ Ex -: Lets seay we asked the question Th sky is then Top P will be having a list
 
 - Presence penality -: Encourages the model to introduce new topics by penalizing the presence of already-mentioned tokens.
 
-<h2>Optimizing the temperature and top p for different use casese.<h2>
+<h2 align = center>Optimizing the temperature and top p for different use casese.<h2>
+
+- > 
