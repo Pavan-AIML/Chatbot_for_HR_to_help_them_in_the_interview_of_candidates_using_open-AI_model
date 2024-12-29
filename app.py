@@ -124,7 +124,6 @@ if not st.session_state.setup_complete:
     
     
 
-
 """
 Defining the Open AI model.
 
