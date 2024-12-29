@@ -1,6 +1,6 @@
 from openai import OpenAI
 import streamlit as st
-from config import secreat_key
+# from config import secreat_key
 
 
 # page stetup 
@@ -14,10 +14,11 @@ def complete_setup():
     st.session_state.setup_complete = True
 
 
-"""
-this line checks if the setup complete session state variable state is false and if it is then user will be displayed.
+#this line checks if the setup complete session state variable 
 
-"""
+# state is false and if it is then user will be displayed.
+
+
 
 if not st.session_state.setup_complete:
     
@@ -35,9 +36,9 @@ if not st.session_state.setup_complete:
         st.session_state["skills"] = ""
     
     
-    """
-    Asking user's details. User name, experience, skills
-    """
+    
+    #Asking user's details. User name, experience, skills
+    
     
     # user's name 
     
@@ -54,9 +55,9 @@ if not st.session_state.setup_complete:
     
     
     
-    """
-    Creating the label to check the informations.
-    """
+    
+    # Creating the label to check the informations.
+    
     
     # Creating a label to confirm the input of the response. To do this we will use the write method
     
@@ -68,16 +69,16 @@ if not st.session_state.setup_complete:
     
     
     
-    """
-    Creating one more label to get the information about the Company and name of the Interviewee
-    """
+    
+    #Creating one more label to get the information about the   #Company and name of the Interviewee
+    
     
     # Add the fields for company and position separatly.
 
-    """
-    Initializing the session state variables.
+    
+    # Initializing the session state variables.
 
-    """
+    
 
     st.subheader("Company" "&" "Position", divider = 'rainbow')
 
@@ -106,10 +107,10 @@ if not st.session_state.setup_complete:
         )
     
     
-        """
-        Enter a list of company names.
+        
+        # Enter a list of company names.
     
-        """
+    
     
     st.session_state["company"] = st.selectbox(
         "Choose a Company ",
@@ -124,10 +125,9 @@ if not st.session_state.setup_complete:
     
     
 
-"""
-Defining the Open AI model.
 
-"""
+# Defining the Open AI model.
+
 
 
 # Open AI model 
@@ -144,7 +144,7 @@ if st.session_state.setup_complete:
     )
 
 
-    client = OpenAI(api_key = st.secrets["secreat_key"])
+    client = OpenAI(api_key = st.secrets["secret_key"])
 
 
     if "openai_model" not in st.session_state:
@@ -182,10 +182,9 @@ if st.session_state.setup_complete:
                 st.markdown(message["content"])
 
 
-    """
-    Creating the chat.
-
-    """
+    
+    # Creating the chat.
+    
 
 
 
