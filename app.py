@@ -2,7 +2,7 @@ from openai import OpenAI
 import streamlit as st
 from config import secreat_key
 
-api_key = secreat_key
+
 # page stetup 
 st.set_page_config(page_title = "Streamlit Chat", page_icon = 'speech_balloon')
 st.title('Chatbot')
@@ -144,7 +144,7 @@ if st.session_state.setup_complete:
     )
 
 
-    client = OpenAI(api_key = api_key)
+    client = OpenAI(api_key = st.secrets["secreat_key"])
 
 
     if "openai_model" not in st.session_state:
