@@ -170,17 +170,15 @@ if st.session_state.setup_complete:
 
                 f"You are an HR executive that interviews as interviewee called {st.session_state['name']}"
 
-                f"with experience {st.session_state["experience"]}"
+                f"with experience {st.session_state['experience']} and skills {st.session_state['skills']}."
 
+                f"You should interview him for the position {st.session_state['level']} {st.session_state['position']}"
 
-
-
-
-
-
+                f"at the company {st.session_state['company']}"
             )
         }]
       
+
 
     for message in st.session_state.messages:
         if message["role"] != "system":
@@ -205,7 +203,7 @@ if st.session_state.setup_complete:
         # chat bot response block.
 
         with st.chat_message("assistant"):
-            stream = client.chat.completions.creat(
+            stream = client.chat.completions.create(
                 model = st.session_state["openai_model"],
                 messages =[
                     {
