@@ -1,15 +1,15 @@
-<h2> Creating a chatbot to assist HR in recruiting the people <h2>
+<h2> Creating a chat-bot to assist HR in recruiting the people <h2>
 
-<h3>The purpose of the chat bot is to get all the relevant information from the user and then with help of LLMS get to know more abput the interviewee and ask relevant questions.<h3>
+<h3>The purpose of the chat bot is to get all the relevant information from the Interviewee and then with help of LLMS  ask relevant interview questions.<h3>
 
-- While creatig the chatbot it is essential to look for the model type that is suitable for the taks. 
+- While creating the chat-bot it is essential to look for the model type that is suitable for the your task. 
 
-- Cost is a big factor so also have considered that and choose the cheappest one available. 
+- Cost is a big factor so also have considered that and choose the cheapest one available. 
 
-- Used Open AI model for the chat bot -: OpenAI "gpt-4.o"
+- Used Open AI model for the chat-bot -: OpenAI "gpt-4.o"
 
 
-- I Explored OpenAI play groung model parameters exploring to finalize the parameters.
+- I have explored OpenAI play groung model parameters to finalize the parameters.
 
 - Please check the chatbot by clicking in the below link.
 
