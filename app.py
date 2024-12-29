@@ -145,9 +145,6 @@ if st.session_state.setup_complete:
     )
 
 
-
-
-
     client = OpenAI(api_key = api_key)
 
 
